@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.searchDiv {
+  display: flex;
+  align-items: center;
+  width: 568px;
+  height: 48px;
+  border: 1px solid #121212;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.searchDiv:focus {
+  outline: none;
+}
+.searchBox {
+  flex: 1;
+  padding: 2px;
+  width: 568px;
+  height: 48px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border: 0px, 1px solid #121212;
+}
+.searchBox::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+  color: #121212;
+}
