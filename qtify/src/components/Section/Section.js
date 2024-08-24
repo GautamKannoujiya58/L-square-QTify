@@ -8,6 +8,7 @@ function Section() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [isShowAll, setIsShowAll] = useState(false);
   // useEffect(() => {}, []);
+  // useEffect(() => {}, []);
 
   const handleShowAllClick = () => {
     setIsShowAll((prevstate) => !prevstate);
