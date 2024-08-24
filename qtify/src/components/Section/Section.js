@@ -7,6 +7,7 @@ import styles from "./Section.module.css";
 function Section() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [isShowAll, setIsShowAll] = useState(false);
+  // useEffect(() => {}, []);
 
   const handleShowAllClick = () => {
     setIsShowAll((prevstate) => !prevstate);
