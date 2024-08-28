@@ -20,6 +20,7 @@ function Carousel(props) {
                 albumImage={album.image}
                 title={album.title}
                 follows={album.follows}
+                likes={album.likes}
               />
             }
           </SwiperSlide>

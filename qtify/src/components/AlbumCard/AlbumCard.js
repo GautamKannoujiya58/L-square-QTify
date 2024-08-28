@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./AlbumCard.module.css";
 import Chip from "@mui/material/Chip";
-function AlbumCard({ title, follows, albumImage }) {
+function AlbumCard({ title, follows, albumImage, likes }) {
   return (
     <>
       <div className={styles.card}>
@@ -9,7 +9,32 @@ function AlbumCard({ title, follows, albumImage }) {
           <img src={albumImage} alt="cardImage" />
         </div>
         <div className={styles.chip}>
-          <Chip
+          {follows ? (
+            <Chip
+              style={{
+                color: "#FFFFFF",
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                fontSize: "10px",
+                lineHeight: "15px",
+                paddingBottom: "8px",
+              }}
+              label={follows + " Follows"}
+            />
+          ) : (
+            <Chip
+              style={{
+                color: "#FFFFFF",
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                fontSize: "10px",
+                lineHeight: "15px",
+                paddingBottom: "8px",
+              }}
+              label={likes + " Likes"}
+            />
+          )}
+          {/* <Chip
             style={{
               color: "#FFFFFF",
               fontFamily: "Poppins",
@@ -19,7 +44,7 @@ function AlbumCard({ title, follows, albumImage }) {
               paddingBottom: "8px",
             }}
             label={follows + " Follows"}
-          />
+          /> */}
         </div>
       </div>
       <div>

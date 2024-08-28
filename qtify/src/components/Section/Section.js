@@ -6,11 +6,13 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 import AlbumCard from "../AlbumCard/AlbumCard";
 import styles from "./Section.module.css";
 import Carousel from "../Carousel/Carousel";
+
 function Section() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [newAlbums, setNewAlbums] = useState([]);
   const [isShowTopAllClicked, setIsShowTopAllClicked] = useState(false);
   const [isShowNewAllClicked, setIsShowAllClicked] = useState(false);
+  const [songs, setSongs] = useState([]);
 
   const handleIsTopClicked = (clicked) => {
     setIsShowTopAllClicked(clicked);
@@ -43,9 +45,20 @@ function Section() {
     };
     fetchTopAlbumData();
     fetchNewAlbumData();
+    const fetchSongsData = async () => {
+      try {
+        let res = await axios.get(`https://qtify-backend-labs.crio.do/songs`);
+        let data = res.data;
+        setSongs(data);
+      } catch (error) {
+        console.log("Error >>>", error);
+      }
+    };
+    fetchSongsData();
   }, []);
   console.log("TopAlbum Data >>>", topAlbums);
   console.log("NewAlbum Data >>>", newAlbums);
+  console.log("Songs Data >>>", songs);
   return (
     <>
       <div className={styles.parent}>
@@ -88,6 +101,9 @@ function Section() {
             </Grid>
           )}
         </div>
+      </div>
+      <div className={styles.SongsDiv}>
+        <Carousel albums={songs} />
       </div>
     </>
   );
