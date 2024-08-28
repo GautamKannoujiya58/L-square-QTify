@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import AlbumCard from "../AlbumCard/AlbumCard";
 import styles from "./Section.module.css";
+import Carousel from "../Carousel/Carousel";
 function Section() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [isShowAll, setIsShowAll] = useState(false);
@@ -54,21 +55,9 @@ function Section() {
             )}
           </div>
           {!isShowAll ? (
-            <Grid container spacing={4}>
-              {topAlbums
-                .slice(0, Math.floor(topAlbums.length / 2))
-                .map((album) => (
-                  <Grid key={album.id} item lg={2}>
-                    <AlbumCard
-                      albumImage={album.image}
-                      title={album.title}
-                      follows={album.follows}
-                    />
-                  </Grid>
-                ))}
-            </Grid>
+            <Carousel topAlbums={topAlbums} />
           ) : (
-            <Grid container spacing={4}>
+            <Grid container spacing={1}>
               {topAlbums.map((album) => (
                 <Grid key={album.id} item lg={2}>
                   <AlbumCard
@@ -91,3 +80,17 @@ export default Section;
 /* <Grid item lg={2}>
           <AlbumCard title={title} follows={follows} />
         </Grid> */
+
+// <Grid container spacing={4}>
+//   {topAlbums
+//     .slice(0, Math.floor(topAlbums.length / 2))
+//     .map((album) => (
+// <Grid key={album.id} item lg={2}>
+//   <AlbumCard
+//     albumImage={album.image}
+//     title={album.title}
+//     follows={album.follows}
+//   />
+// </Grid>
+//     ))}
+// </Grid>

@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <Hero />
       <Section />
+      {/* <Carousel /> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Card.module.css";
+import styles from "./AlbumCard.module.css";
 import Chip from "@mui/material/Chip";
 function AlbumCard({ title, follows, albumImage }) {
   return (
@@ -21,6 +21,8 @@ function AlbumCard({ title, follows, albumImage }) {
             label={follows + " Follows"}
           />
         </div>
+      </div>
+      <div>
         <p className={styles.contentType}>{title}</p>
       </div>
     </>

@@ -2,7 +2,7 @@
 .card {
   margin-top: 10px;
   width: 159px;
-  height: 232px;
+  height: 225px;
   background-color: #ffffff;
   border-radius: 10px;
   box-sizing: content-box;
@@ -10,7 +10,7 @@
 
 .imgDiv img {
   width: 159px;
-  height: 200px;
+  height: 186px;
   background-color: #ffffff;
   border-radius: 10px;
   border-bottom-left-radius: 0px;
@@ -19,12 +19,14 @@
 .chip {
   width: auto;
   height: 24px;
-  margin-left: 4px;
-  margin-right: 40%;
+  margin: 4px;
+  margin-left: 8px;
+  margin-right: 60px;
   background-color: #121212;
   border-radius: 10px;
 }
 .contentType {
+  margin-top: 8px;
   width: auto;
   height: 21px;
   font-family: "Poppins";
