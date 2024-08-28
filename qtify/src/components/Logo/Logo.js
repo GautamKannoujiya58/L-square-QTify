@@ -4,6 +4,10 @@ import styles from "../Logo/Logo.module.css";
 
 export default function Logo() {
   return (
-    <img className={styles.imgTag} src={LogoImage} alt="logo" width={67} />
+    <>
+      <div className={styles.imgTag}>
+        <img src={LogoImage} alt="logo" width={67} />
+      </div>
+    </>
   );
 }

@@ -1,6 +1,8 @@
 .imgTag {
+  display: flex;
+  align-items: center;
+
   width: 67px;
   height: 34px;
-  padding: 4px;
-  align-self: center;
+  padding-left: 32px;
 }
