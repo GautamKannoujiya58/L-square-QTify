@@ -75,22 +75,3 @@ function Section() {
   );
 }
 export default Section;
-
-/* title, follows */
-/* <Grid item lg={2}>
-          <AlbumCard title={title} follows={follows} />
-        </Grid> */
-
-// <Grid container spacing={4}>
-//   {topAlbums
-//     .slice(0, Math.floor(topAlbums.length / 2))
-//     .map((album) => (
-// <Grid key={album.id} item lg={2}>
-//   <AlbumCard
-//     albumImage={album.image}
-//     title={album.title}
-//     follows={album.follows}
-//   />
-// </Grid>
-//     ))}
-// </Grid>
