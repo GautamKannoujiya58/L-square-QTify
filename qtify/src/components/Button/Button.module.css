@@ -12,7 +12,8 @@
   font-size: 18px;
   line-height: 27px;
   align-self: center;
-}
-.button:hover {
   cursor: pointer;
 }
+/* .button:hover {
+  cursor: pointer;
+} */
