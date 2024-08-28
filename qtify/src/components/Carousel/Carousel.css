@@ -1,0 +1,25 @@
+.swiper-button-next,
+.swiper-button-prev {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next {
+  background-image: url("../../assets/RightArrow.png");
+  margin-right: 47px;
+  right: 10px; /* Adjust distance from the right */
+  top: 50%; /* Position vertically centered */
+  transform: translateY(-25%); /* Center vertically */
+}
+.swiper-button-prev {
+  background-image: url("../../assets/LeftArrow.png");
+  margin-left: -22px;
+  left: 10px; /* Adjust distance from the right */
+  top: 50%; /* Position vertically centered */
+  transform: translateY(-25%); /* Center vertically */
+}

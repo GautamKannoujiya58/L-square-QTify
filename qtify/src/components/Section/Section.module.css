@@ -3,6 +3,7 @@
 .parent {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .topAlbumParent {
   width: 1376px;
