@@ -60,6 +60,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 function Carousel(props) {
+  console.log("Album in Carousel >>>", props.albums);
   return (
     <>
       <Swiper
@@ -68,7 +69,7 @@ function Carousel(props) {
         slidesPerView={6}
         className="mySwiper"
       >
-        {props.topAlbums.map((album) => (
+        {props.albums.map((album) => (
           <SwiperSlide key={album.id}>
             {
               <AlbumCard
