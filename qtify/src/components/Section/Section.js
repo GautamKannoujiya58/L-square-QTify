@@ -6,6 +6,7 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 import AlbumCard from "../AlbumCard/AlbumCard";
 import styles from "./Section.module.css";
 import Carousel from "../Carousel/Carousel";
+import TabComponent from "../Tabs/TabComponent";
 
 function Section() {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -13,6 +14,7 @@ function Section() {
   const [isShowTopAllClicked, setIsShowTopAllClicked] = useState(false);
   const [isShowNewAllClicked, setIsShowAllClicked] = useState(false);
   const [songs, setSongs] = useState([]);
+  const [genres, setGenre] = useState([]);
 
   const handleIsTopClicked = (clicked) => {
     setIsShowTopAllClicked(clicked);
@@ -45,6 +47,16 @@ function Section() {
     };
     fetchTopAlbumData();
     fetchNewAlbumData();
+    const fetchSongGenre = async () => {
+      try {
+        let res = await axios.get(`https://qtify-backend-labs.crio.do/genres`);
+        let data = res.data.data;
+        setGenre(data);
+      } catch (error) {
+        console.log(("Genre Error >>>", error));
+      }
+    };
+    fetchSongGenre();
     const fetchSongsData = async () => {
       try {
         let res = await axios.get(`https://qtify-backend-labs.crio.do/songs`);
@@ -59,6 +71,7 @@ function Section() {
   console.log("TopAlbum Data >>>", topAlbums);
   console.log("NewAlbum Data >>>", newAlbums);
   console.log("Songs Data >>>", songs);
+  console.log("Genre Data >>>", genres);
   return (
     <>
       <div className={styles.parent}>
@@ -102,8 +115,9 @@ function Section() {
           )}
         </div>
       </div>
-      <div className={styles.SongsDiv}>
-        <Carousel albums={songs} />
+      <div className={styles.tabComponentParentDiv}>
+        <h3>Songs</h3>
+        <TabComponent genres={genres} songs={songs} />
       </div>
     </>
   );

@@ -13,3 +13,20 @@
   margin-top: -8px;
   width: 1376px;
 }
+.tabComponentParentDiv {
+  margin-top: 50px;
+  width: 1440px;
+  height: 381px;
+  display: flex;
+  flex-direction: column;
+}
+.tabComponentParentDiv h3 {
+  width: 63px;
+  height: 30px;
+  margin-left: 32px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
