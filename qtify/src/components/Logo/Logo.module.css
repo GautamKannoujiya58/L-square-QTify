@@ -1,22 +1,5 @@
-/* .imgTag {
-  display: flex;
-  align-items: center;
-  width: 67px;
-  height: 34px;
-  padding-left: 32px;
-} */
-
-/* @media only screen and (max-width: 600px) { */
-/* .imgTag {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  } */
-/* } */
-
 .imgTag {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  padding-left: 16px;
+  padding-left: 3vw;
+  width: auto;
+  height: auto;
 }

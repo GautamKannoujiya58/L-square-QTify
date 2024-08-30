@@ -1,29 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.button {
-  font-family: "Poppins";
-  width: 170px;
-  height: 48px;
+
+.buttonStyle {
+  width: auto;
+  height: 5vh;
   border-radius: 12px;
-  border: 1px solid #121212;
   background-color: #121212;
   color: #34c94b;
-  /* padding: 10px, 16px, 10px, 16px; */
+  font-family: "Poppins";
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  align-self: center;
-  cursor: pointer;
-  margin-right: 10px;
+  font-size: 2vh;
+  line-height: 2.5vh;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-right: 2vw;
+  border: none;
 }
-/* .button:hover {
-  cursor: pointer;
-} */
 
-@media only screen and (max-width: 900px) {
-  .button {
-    width: auto;
-    height: auto;
-    margin-left: 16px;
-    margin-right: 20px;
+@media only screen and (min-width: 900px) {
+  .buttonStyle {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
   }
 }

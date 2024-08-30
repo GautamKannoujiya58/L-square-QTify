@@ -1,17 +1,15 @@
 .navbar {
   background-color: #34c94b;
-  height: 70px;
-  margin: 0.2%;
+  width: "fullwidth";
+  height: 8vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-  border-radius: 0.6vw;
-}
-@media only screen and (width: 900px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-  }
+  align-items: center;
+  gap: 4vw;
+  overflow: auto;
 }

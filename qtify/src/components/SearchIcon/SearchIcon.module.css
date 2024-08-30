@@ -1,9 +1,19 @@
-.SearchIcon {
+.searchIconDiv {
+  width: auto;
+  height: 5.5vh;
   background: #ffffff;
-  width: 66px;
-  height: 52px;
-  border: none;
+  border: 1px solid #121212;
+  border-radius: 1vh;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
-.SearchIcon:hover {
-  cursor: pointer;
+@media only screen and (min-width: 900px) {
+  .searchIconDiv {
+    width: 3.5vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .searchIconDiv {
+    height: 5.3vh;
+  }
 }

@@ -68,10 +68,10 @@ function Section() {
     };
     fetchSongsData();
   }, []);
-  console.log("TopAlbum Data >>>", topAlbums);
-  console.log("NewAlbum Data >>>", newAlbums);
-  console.log("Songs Data >>>", songs);
-  console.log("Genre Data >>>", genres);
+  // console.log("TopAlbum Data >>>", topAlbums);
+  // console.log("NewAlbum Data >>>", newAlbums);
+  // console.log("Songs Data >>>", songs);
+  // console.log("Genre Data >>>", genres);
   return (
     <>
       <div className={styles.parent}>
@@ -82,7 +82,7 @@ function Section() {
           ) : (
             <Grid container spacing={1}>
               {topAlbums.map((album) => (
-                <Grid key={album.id} item lg={2}>
+                <Grid key={album.id} item lg={2} xs={12} md={4}>
                   <AlbumCard
                     albumImage={album.image}
                     title={album.title}

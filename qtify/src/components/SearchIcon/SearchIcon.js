@@ -4,7 +4,7 @@ import styles from "../SearchIcon/SearchIcon.module.css";
 function SearchIcon() {
   return (
     <>
-      <button className={styles.SearchIcon}>
+      <button className={styles.searchIconDiv}>
         <img src={Searchicon} alt="search-box" />
       </button>
     </>
