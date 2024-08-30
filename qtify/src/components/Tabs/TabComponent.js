@@ -10,16 +10,16 @@ function TabComponent(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  console.log("Valure in Tab>>>>>>>>>>", value);
+  // console.log("Valure in Tab>>>>>>>>>>", value);
   const jazzGenre = props.songs.filter((song) => song.genre.label === "Jazz");
   const rockGenre = props.songs.filter((song) => song.genre.label === "Rock");
   const popGenre = props.songs.filter((song) => song.genre.label === "Pop");
   const bluesGenre = props.songs.filter((song) => song.genre.label === "Blues");
 
-  console.log("JazzGenres >>>>>>", jazzGenre);
-  console.log("RockGeneres >>>>>>", rockGenre);
-  console.log("PopGenres >>>>>>", popGenre);
-  console.log("BluesGenres >>>>>>", bluesGenre);
+  // console.log("JazzGenres >>>>>>", jazzGenre);
+  // console.log("RockGeneres >>>>>>", rockGenre);
+  // console.log("PopGenres >>>>>>", popGenre);
+  // console.log("BluesGenres >>>>>>", bluesGenre);
 
   return (
     <Box sx={{ width: "auto" }}>

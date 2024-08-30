@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 function Carousel(props) {
-  console.log("Album in Carousel >>>", props.albums);
+  // console.log("Album in Carousel >>>", props.albums);
   return (
     <>
       <div className="swiperContainer">

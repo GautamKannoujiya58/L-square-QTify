@@ -1,4 +1,4 @@
-.searchIconDiv {
+.searchIconButton {
   width: auto;
   height: 5.5vh;
   background: #ffffff;
@@ -6,14 +6,15 @@
   border-radius: 1vh;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 900px) {
-  .searchIconDiv {
+  .searchIconButton {
     width: 3.5vw;
   }
 }
 @media only screen and (max-width: 400px) {
-  .searchIconDiv {
+  .searchIconButton {
     height: 5.3vh;
   }
 }
