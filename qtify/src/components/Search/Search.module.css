@@ -8,6 +8,7 @@
   border: 1px solid #121212;
   border-radius: 10px;
   overflow: hidden;
+  /* margin-left: 12px; */
 }
 .searchDiv:focus {
   outline: none;
@@ -28,4 +29,35 @@
   font-size: 16px;
   padding: 10px;
   color: #121212;
+}
+.searchBox:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchDiv {
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    margin-left: 16px;
+  }
+  .searchBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+
+    /* padding: 10px; */
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  .searchBox::placeholder {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* padding: auto; */
+    color: #121212;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
 }

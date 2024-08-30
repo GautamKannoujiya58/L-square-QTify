@@ -11,6 +11,7 @@ function Hero() {
             Over thousands podcast episodes
           </h1>
         </div>
+
         <img
           className={styles.heroImg}
           src={require("../../assets/hero_headphones.png")}
